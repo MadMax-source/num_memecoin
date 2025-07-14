@@ -17,13 +17,13 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/50"></div>
             <div className="container mx-auto px-4 text-center relative z-10">
                 <div className="mb-8">
-                    <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-600 mb-4 tracking-tight">
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-600 mb-4 tracking-tight">
                         NUM∞ TOKEN
                     </h1>
                     <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8"></div>
                 </div>
 
-                <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6 leading-tight">
                     NUM is not just a token – it's a digital asset backed by a real-world ecosystem.
                 </h2>
 
