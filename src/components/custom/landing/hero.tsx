@@ -1,30 +1,54 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Twitter, Send, Instagram, Music, Globe, Menu, Copy, TrendingUp, Users, Zap } from "lucide-react"
 import Image from "next/image"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Link from "next/link"
+import { Connection, PublicKey } from "@solana/web3.js"
 
 export function HeroSection() {
 
-    const contractAddress = "HGR2HkBpZBKb5Cr6TXPR9KgU2FbxVsAA54zm7DmQLNGQ"
+    const contractAddress = "6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ"
+    const [holders, setHolders] = useState<number | null>(null)
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(contractAddress)
     }
+
+     useEffect(() => {
+    const fetchHolders = async () => {
+      try {
+        const RPC_URL = "https://mainnet.helius-rpc.com/?api-key=77aae9b3-ad37-4523-8caf-dea409d5519e"
+        const connection = new Connection(RPC_URL, "confirmed")
+        const mintPubkey = new PublicKey(contractAddress)
+
+        const tokenAccounts = await connection.getTokenLargestAccounts(mintPubkey)
+        const nonZero = tokenAccounts.value.filter(acc => acc.uiAmount !== null && acc.uiAmount > 0)
+        setHolders(nonZero.length)
+      } catch (error) {
+        console.error("Failed to fetch token holders:", error)
+      }
+    }
+
+    fetchHolders()
+  }, [])
+
     return (
         <section className="relative py-20 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/50"></div>
             <div className="container mx-auto px-4 text-center relative z-10">
                 <div className="mb-8">
                     <h1 className="text-4xl sm:text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-600 mb-4 tracking-tight">
-                        NUM∞ TOKEN
+                        The Infinite (NUM1)
                     </h1>
                     <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto mb-8"></div>
                 </div>
 
                 <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6 leading-tight">
-                    NUM is not just a token – it's a digital asset backed by a real-world ecosystem.
+                    NUM1 is not just a token – it's a digital asset backed by a real-world ecosystem.
                 </h2>
 
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-2xl mx-auto">
@@ -77,7 +101,7 @@ export function HeroSection() {
 
                 <Card className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border-yellow-400/30 backdrop-blur-sm max-w-md mx-auto">
                     <div className="p-6 text-center">
-                        <div className="text-4xl font-black text-yellow-400 mb-2">+7.6K</div>
+                        <div className="text-4xl font-black text-yellow-400 mb-2"> {holders !== null ? `+${holders.toLocaleString()}` : "Loading..."}</div>
                         <div className="text-white font-semibold">Number Of Holders</div>
                     </div>
                 </Card>
