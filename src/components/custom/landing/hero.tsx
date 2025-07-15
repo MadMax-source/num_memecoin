@@ -1,16 +1,40 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Twitter, Send, Instagram, Music, Globe, Copy } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { Connection, PublicKey } from "@solana/web3.js"
 
 export function HeroSection() {
 
-    const contractAddress = "HGR2HkBpZBKb5Cr6TXPR9KgU2FbxVsAA54zm7DmQLNGQ"
+    const contractAddress = "6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ"
+    const [holders, setHolders] = useState<number | null>(null)
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(contractAddress)
     }
+
+    useEffect(() => {
+        const fetchHolders = async () => {
+            try {
+                const RPC_URL = "https://mainnet.helius-rpc.com/?api-key=77aae9b3-ad37-4523-8caf-dea409d5519e"
+                const connection = new Connection(RPC_URL, "confirmed")
+                const mintPubkey = new PublicKey(contractAddress)
+
+                const tokenAccounts = await connection.getTokenLargestAccounts(mintPubkey)
+                const nonZero = tokenAccounts.value.filter((acc: { uiAmount: number | null }) => acc.uiAmount !== null && acc.uiAmount > 0)
+                setHolders(nonZero.length)
+            } catch (error) {
+                console.error("Failed to fetch token holders:", error)
+            }
+        }
+
+        fetchHolders()
+    }, [])
+
     return (
         <section className=" relative py-20 overflow-hidden flex flex-row items-center">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/50 " />
@@ -26,7 +50,6 @@ export function HeroSection() {
                     <h2 className="text-sm text-center  lg:text-left md:text-base text-white mb-6 leading-tight">
                         NUM is not just a token – it's a digital asset backed by a real-world ecosystem.
                     </h2>
-
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-fit mx-auto lg:mx-0">
                         <p className="text-sm text-gray-300 mb-2 text-center">Contract:</p>
                         <div className="flex items-center justify-center space-x-2">
@@ -77,9 +100,10 @@ export function HeroSection() {
 
                     <Card className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border-yellow-400/30 backdrop-blur-sm max-w-md mx-auto">
                         <div className="p-6 text-center">
-                            <div className="text-4xl font-black text-yellow-400 mb-2">+7.6K</div>
+                            <div className="text-4xl font-black text-yellow-400 mb-2"> {holders !== null ? `+${holders.toLocaleString()}` : "Loading..."}</div>
                             <div className="text-white font-semibold">Number Of Holders</div>
                         </div>
+
                     </Card>
                 </div>
                 <div className="h-[600px] w-full relative">

@@ -12,7 +12,7 @@ export function Header() {
                 <nav className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                         <Image src="/jumo.jpeg" alt="NUM∞ Logo" width={48} height={48} className="rounded-full" />
-                        <span className="text-white font-bold text-xl">numtoken</span>
+                        <span className="text-white font-bold text-xl">NUM1</span>
                     </div>
                     <div className="flex items-center space-x-4">
                         <Link href="https://t.me/num1coin" target="_blank" rel="noopener noreferrer" className="relative group">
@@ -41,7 +41,7 @@ export function Header() {
                                             height={40}
                                             className="rounded-full"
                                         />
-                                        <span className="text-white font-bold text-lg">NUM∞</span>
+                                        <span className="text-white font-bold text-lg">NUM1</span>
                                     </div>
                                     <Link href="#home" className="text-white hover:text-cyan-400 text-lg font-medium transition-colors">
                                         Home
