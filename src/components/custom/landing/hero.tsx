@@ -62,12 +62,25 @@ export function HeroSection() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    
+                    <Link
+  href="https://jup.ag/swap/6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ-So11111111111111111111111111111111111111112"
+  target="_blank"
+  rel="noopener noreferrer"
+>
                     <Button
                         size="lg"
                         className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg px-8 py-4"
                     >
                         BUY $NUM
                     </Button>
+                    </Link>
+
+                    <Link 
+                    href="https://dexscreener.com/solana/6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ"
+  target="_blank"
+  rel="noopener noreferrer"
+                    >
                     <Button
                         size="lg"
                         variant="outline"
@@ -75,6 +88,7 @@ export function HeroSection() {
                     >
                         CHART
                     </Button>
+                    </Link>
                 </div>
 
                 <div className="flex justify-center space-x-6 mb-12">
