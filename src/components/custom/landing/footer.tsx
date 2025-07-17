@@ -17,9 +17,8 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     {/* Brand Section */}
                     <div className="col-span-1 md:col-span-2">
-                        <div className="flex items-center space-x-3 mb-6">
-                            <Image src="/jumo.jpeg" alt="NUM∞ Logo" width={48} height={48} className="rounded-full" />
-                            <span className="text-2xl font-bold text-white">NUM∞</span>
+                        <div className=" h-20 w-40 relative">
+                            <Image src="/jumo-2.png" alt="NUM∞ Logo" fill className="rounded-full object-contain" />
                         </div>
                         <p className="text-gray-300 text-lg mb-6 max-w-md">
                             Your number, your identity. Represent your number. Be unique.
@@ -101,7 +100,7 @@ export default function Footer() {
                 <div className="border-t border-gray-700 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="mb-4 md:mb-0">
-                            <p className="text-gray-400">© 2024 NUM∞ Token. All rights reserved.</p>
+                            <p className="text-gray-400">@{new Date().getFullYear()} NUM∞ Token. All rights reserved.</p>
                         </div>
                         <div className="flex items-center space-x-6">
                             <Link href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
