@@ -4,7 +4,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 export default function AboutUs() {
     return (
-        <section className="py-20 bg-gradient-to-r from-yellow-400 to-orange-500">
+        <section className="py-20 bg-[#99582a]">
             <div className="container mx-auto px-4">
                 <div className="mx-auto">
 
@@ -18,14 +18,14 @@ export default function AboutUs() {
                             <span className="w-2 h-2 bg-cyan-400 rounded-full" />
                         </div>
                         <Zoom>
-                            <h2 className="text-4xl md:text-5xl font-black text-black">ABOUT THE NUM PROJECT</h2>
+                            <h2 className="text-4xl md:text-5xl font-black text-white">ABOUT THE NUM PROJECT</h2>
                         </Zoom>
                     </div>
 
                     {/* Project Intro */}
                     <Fade>
                         <div className="sm:p-6 mb-10">
-                            <p className="text-black text-sm md:text-base text-center  leading-relaxed mb-6 max-w-2xl mx-auto">
+                            <p className="text-white text-sm md:text-base text-center  leading-relaxed mb-6 max-w-2xl mx-auto">
                                 NUM is not just a token – it's a digital asset backed by a real-world ecosystem. It’s the official token
                                 powering the fashion-tech brand NUM1, which already operates an online activewear store at{" "}
                                 <Link
@@ -38,7 +38,7 @@ export default function AboutUs() {
                                 </Link>
                                 .
                             </p>
-                            <p className="text-black text-sm md:text-base  text-center leading-relaxed max-w-2xl mx-auto">
+                            <p className="text-white text-sm md:text-base  text-center leading-relaxed max-w-2xl mx-auto">
                                 <strong>Our Mission:</strong> To connect fashion, fitness, and blockchain in one seamless lifestyle
                                 experience. NUM is built to integrate with both the e-commerce store and our upcoming fitness club network.
                             </p>
@@ -105,7 +105,7 @@ export default function AboutUs() {
                         </div>
                         <div className="max-w-2xl mx-auto w-full rounded-2xl flex items-center justify-center">
                             <Image
-                                src="/download-2.png"
+                                src="/jumo-2.jpg"
                                 alt="Family Token Character"
                                 width={400}
                                 height={200}

@@ -3,7 +3,7 @@ import { TrendingUp, Users, Zap } from "lucide-react"
 
 export function Stats() {
     return (
-        <section className="py-16 bg-black/20 backdrop-blur-sm">
+        <section className="py-16 bg-[#8a4e23] backdrop-blur-sm">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <Card className="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 border-cyan-400/30 backdrop-blur-sm">

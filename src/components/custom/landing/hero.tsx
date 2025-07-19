@@ -39,7 +39,7 @@ export function HeroSection() {
 
     return (
         <section className=" relative py-20 overflow-hidden flex flex-row items-center">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/50 " />
+            <div className="absolute inset-0 bg-[#8a4e23]" />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <Fade>
                     <div className=" relative z-10 container mx-auto px-4 lg:px-0 xl:px-4 w-full ">
@@ -69,7 +69,7 @@ export function HeroSection() {
                             >
                                 <Button
                                     size="lg"
-                                    className="rounded-sm bg-[#432818] hover:bg-orange-900 text-white font-bold text-lg px-8 py-4"
+                                    className="rounded-md border bg-[#432818] hover:bg-orange-900 text-white font-bold text-lg px-8 py-4"
                                 >
                                     BUY $NUM
                                 </Button>
@@ -125,7 +125,7 @@ export function HeroSection() {
                     <div className="h-[500px] sm:h-[600px] w-full relative">
                         <div className=" absolute inset-0 bg-gradient-to-r from-indigo-500 to-yellow-500 blur-3xl opacity-20" />
                         <Image
-                            src={"/download-2.png"}
+                            src={"/jomo-1.png"}
                             fetchPriority="high"
                             alt="Jumo Image "
                             fill
