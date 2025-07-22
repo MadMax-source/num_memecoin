@@ -132,13 +132,13 @@ export function HeroSection() {
                 </Fade>
                 <Fade>
                     <div className="h-[500px] sm:h-[600px] w-full relative">
-                        <div className=" absolute inset-0 bg-gradient-to-r from-indigo-500 to-yellow-500 blur-3xl opacity-20" />
+                        <div className=" absolute  " />
                         <Image
                             src={"/background/logo.png"}
                             fetchPriority="high"
                             alt="Jumo Image "
                             fill
-                            className={"object-contain object-top w-ful h-full"}
+                            className={"object-contain object-top w-ful h-full bg-[#e0d6cd] rounded-full"}
                         />
                     </div>
                 </Fade>
