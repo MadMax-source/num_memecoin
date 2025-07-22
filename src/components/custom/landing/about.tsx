@@ -10,15 +10,15 @@ export default function AboutUs() {
 
                     {/* Header */}
                     <div className="text-center mb-10">
-                        <div className="inline-flex items-center space-x-2 bg-white text-white px-6 py-2 rounded-full mb-6">
-                            <span className="w-2 h-2 bg-[#e0d6cd] rounded-full" />
-                            <span className="w-4 h-1 bg-[#e0d6cd] rounded-full" />
-                            <span className="w-8 h-1 bg-[#e0d6cd] rounded-full" />
-                            <span className="w-4 h-1 bg-[#e0d6cd] rounded-full" />
-                            <span className="w-2 h-2 bg-[#e0d6cd] rounded-full" />
+                        <div className="inline-flex items-center space-x-2 bg-[#e0d6cd] text-white px-6 py-2 rounded-full mb-6">
+                            <span className="w-2 h-2 bg-[#432818] rounded-full" />
+                            <span className="w-4 h-1 bg-[#432818] rounded-full" />
+                            <span className="w-8 h-1 bg-[#432818] rounded-full" />
+                            <span className="w-4 h-1 bg-[#432818] rounded-full" />
+                            <span className="w-2 h-2 bg-[#432818] rounded-full" />
                         </div>
                         <Zoom>
-                            <h2 className="text-4xl md:text-5xl font-black text-[#e0d6cd]">ABOUT THE NUM PROJECT</h2>
+                            <h2 className="text-4xl md:text-5xl font-black text-[#432818]">ABOUT THE NUM PROJECT</h2>
                         </Zoom>
                     </div>
 
@@ -78,7 +78,7 @@ export default function AboutUs() {
                         </Section>
 
                         {/* Roadmap */}
-                        <Section title="Roadmap" image="/road-map.svg" reverse={false}>
+                        <Section title="Roadmap" image="/road-map.svg" reverse={false}> 
                             <li><strong>Q3 2025:</strong> Launch landing page and Telegram growth</li>
                             <li><strong>Q4 2025:</strong> Launch NUM token on major exchanges</li>
                             <li><strong>Q1 2026:</strong> Launch clubs in Riyadh, Dubai, London, New York, Paris, Geneva, Kuwait, and Hong Kong</li>
@@ -88,7 +88,7 @@ export default function AboutUs() {
 
                         {/* Transparency */}
                         <div className="mb-12 max-w-xl mx-auto">
-                            <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-[#432818]">Transparency</h3>
+                            <h3 className="text-3xl md:text-4xl font-bold  mb-6 text-[#432818]">Transparency</h3>
                             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-md">
                                 <p className="text-white text-sm md:text-base leading-relaxed">
                                     Our project is real and verifiable – from the e-commerce store to the planned physical locations.
@@ -100,12 +100,15 @@ export default function AboutUs() {
                     </div>
                     {/* Call to Action */}
                     <div className="text-center">
-                        <div className="inline-block bg-white rounded-lg p-4 shadow-lg mb-6">
-                            <span className="text-black font-bold text-xl">BUY $NUM</span>
+                        <Link href="https://jup.ag/swap/6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ-So11111111111111111111111111111111111111112" target="_blank" rel="noopener noreferrer">
+                        <div className="inline-block bg-[#e0d6cd] rounded-lg p-4 shadow-lg mb-6 text-[#432818] text-center hover:bg-[#d0c2b5] transition-colors duration-200">
+                            <span className=" font-bold text-xl">BUY $NUM</span>
                         </div>
+                        </Link>
+                        
                         <div className="max-w-2xl mx-auto w-full rounded-2xl flex items-center justify-center">
                             <Image
-                                src="/jumo-2.jpg"
+                                src="/background/coin.png"
                                 alt="Family Token Character"
                                 width={400}
                                 height={200}
@@ -126,7 +129,7 @@ function Section({ title, reverse, children, image }: { title: string, reverse: 
         <Fade>
             <div className={`flex flex-col  ${reverse ? " flex-row-reverse" : "lg:flex-row"} justify-between gap-10 mx-auto max-w-6xl my-3`}>
                 <div className="mb-10">
-                    <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">{title}</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#432818] mb-6">{title}</h3>
                     <ul className="list-disc list-inside text-white text-sm md:text-base leading-relaxed space-y-3 ">
                         {children}
                     </ul>
