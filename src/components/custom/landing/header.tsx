@@ -6,8 +6,10 @@ import Link from "next/link"
 
 export function Header() {
     return (
-        <header className="overflow-hidden sticky top-0 z-50 border-b border-gray-400 bg-[#99582a]">
+        <header className="bg-[url('/background/headerimg.svg')] bg-cover bg-no-repeat bg-center overflow-hidden sticky top-0 z-50 border-b border-gray-400 shadow-md">
+            {/*bg-[#e0d6cd]*/}
             {/* <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-500/20"></div> */}
+    
             <div className="container mx-auto px-4  relative z-10">
                 <nav className="flex items-center justify-between">
                     <div className="flex items-center space-x-4 h-20 w-40 relative">
@@ -15,7 +17,7 @@ export function Header() {
                     </div>
                     <div className="flex items-center space-x-4">
                         <Link href="https://t.me/num1coin" target="_blank" rel="noopener noreferrer" className="relative group">
-                            <Button className="rounded-md bg-[#99582a] border text-white hover:from-cyan-500 hover:via-blue-600 hover:to-cyan-700 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105">
+                            <Button className="rounded-md bg-gradient-to-r from-[#8a4e23] to-[#b06a33] text-white shadow-md hover:shadow-lg transition-all duration-200">
                                 <Send className="mr-2 h-4 w-4" />
                                 TELEGRAM
                                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-md blur-xl group-hover:blur-2xl transition-all duration-300"></div>
@@ -23,7 +25,7 @@ export function Header() {
                         </Link>
                         <Sheet>
                             <SheetTrigger asChild>
-                                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                                <Button variant="ghost" size="icon" className="text-[#b06a33] hover:bg-white/10">
                                     <Menu className="h-6 w-6" />
                                 </Button>
                             </SheetTrigger>

@@ -10,8 +10,10 @@ import { Stats } from "./stats"
 
 export default function FamilyTokenLanding() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900">
+        <div className="min-h-screen  ">
+            {/*bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900*/}
             {/* Header */}
+
             <Header />
             {/* Hero Section */}
             <HeroSection />

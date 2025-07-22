@@ -8,6 +8,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Connection, PublicKey } from "@solana/web3.js"
 import { Fade, Zoom } from "react-awesome-reveal";
+import WaveBackground from "@/components/background/headerBg"
 
 
 export function HeroSection() {
@@ -38,26 +39,32 @@ export function HeroSection() {
     }, [])
 
     return (
-        <section className=" relative py-20 overflow-hidden flex flex-row items-center">
-            <div className="absolute inset-0 bg-[#8a4e23]" />
+        <section className="bg-[url('/background/heroimg.svg')] bg-cover bg-no-repeat bg-center  relative py-20 overflow-hidden flex flex-row items-center">
+           
+           
+           {/*
+            <div className="absolute inset-0  "/>
+           */}
+           <WaveBackground />
+            {/*bg-[#8a4e23] */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <Fade>
                     <div className=" relative z-10 container mx-auto px-4 lg:px-0 xl:px-4 w-full ">
                         <div className="mb-8">
-                            <h1 className="text-4xl text-center lg:text-left text-white lg:text-5xl font-black  mb-4 tracking-tight">
+                            <h1 className="text-4xl text-center lg:text-left text-[#432818] lg:text-5xl font-black  mb-4 tracking-tight">
                                 Secure Transactions with Complete Trust | NUMO
                             </h1>
-                            <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-blue-400 mx-auto lg:mx-0  mb-8" />
+                            <div className="w-32 h-1  bg-[#a1673a] mx-auto lg:mx-0  mb-8" />
                         </div>
 
-                        <h2 className="text-sm text-center  lg:text-left md:text-base text-white mb-6 leading-tight">
+                        <h2 className="text-lg text-center  lg:text-left md:text-base text-[#a1673a] bg-[#e0d6cd]	 mb-6 leading-tight">
                             NUM is not just a token – it's a digital asset backed by a real-world ecosystem.
                         </h2>
-                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-fit mx-auto lg:mx-0">
-                            <p className="text-sm text-gray-300 mb-2 text-center">Contract:</p>
+                        <div className="bg-[#a1673a]/10 backdrop-blur-sm	 rounded-lg p-4 mb-8 max-w-fit mx-auto lg:mx-0">
+                            <p className="text-sm text-[#a1673a] mb-2 text-center">Contract:</p>
                             <div className="flex items-center justify-center space-x-2">
-                                <code className="text-white font-mono text-sm break-all">{contractAddress}</code>
-                                <Button size="sm" variant="ghost" onClick={copyToClipboard} className="text-cyan-400 hover:text-cyan-300">
+                                <code className="text-[#432818] font-mono text-sm break-all">{contractAddress}</code>
+                                <Button size="sm" variant="ghost" onClick={copyToClipboard} className="text-[#a1673a] hover:text-[#432818]">
                                     <Copy className="h-4 w-4" />
                                 </Button>
                             </div>
@@ -69,7 +76,9 @@ export function HeroSection() {
                             >
                                 <Button
                                     size="lg"
-                                    className="rounded-md border bg-[#432818] hover:bg-orange-900 text-white font-bold text-lg px-8 py-4"
+                                    className="rounded-md border-gray-300 bg-gradient-to-br from-[#432818] via-[#6e3c26] to-[#8a4e23] 
+             hover:from-[#5a2f1f] hover:via-[#7f412a] hover:to-[#b35a28] 
+             text-white font-bold text-lg px-8 py-4 shadow-md hover:shadow-lg transition-all duration-200"
                                 >
                                     BUY $NUM
                                 </Button>
@@ -81,9 +90,9 @@ export function HeroSection() {
                                 <Button
                                     size="lg"
                                     variant="outline"
-                                    className="border-white rounded-sm  text-white hover:bg-white hover:text-blue-900 font-bold text-lg px-8 py-4 bg-transparent"
+                                    className="border-gray-300 rounded-md  text-[#432818] hover:bg-[#432818] hover:text-white font-bold text-lg px-8 py-4 bg-transparent shadow-md"
                                 >
-                                    CHART
+                                    VIEW CHART
                                 </Button>
                             </Link>
 
@@ -91,22 +100,22 @@ export function HeroSection() {
 
                         <div className="flex max-w-fit  space-x-6 mb-12 mx-auto lg:mx-0">
                             <Link href="https://x.com/numtoken_?t=Byor5U1IeJsSZZRedaTAhw&s=09" target="_blank" rel="noopener noreferrer">
-                                <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                                <Button variant="ghost" size="icon" className="text-[#a1673a] hover:text-[#432818]">
                                     <Twitter className="h-6 w-6" />
                                 </Button>
                             </Link>
                             <Link href="https://t.me/num1coin" target="_blank" rel="noopener noreferrer">
-                                <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                                <Button variant="ghost" size="icon" className="text-[#a1673a] hover:text-[#432818]">
                                     <Send className="h-6 w-6" />
                                 </Button>
                             </Link>
-                            <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                            <Button variant="ghost" size="icon" className="text-[#a1673a] hover:text-[#432818]">
                                 <Instagram className="h-6 w-6" />
                             </Button>
-                            <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                            <Button variant="ghost" size="icon" className="text-[#a1673a] hover:text-[#432818]">
                                 <Music className="h-6 w-6" />
                             </Button>
-                            <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                            <Button variant="ghost" size="icon" className="text-[#a1673a] hover:text-[#432818]">
                                 <Globe className="h-6 w-6" />
                             </Button>
                         </div>
@@ -114,8 +123,8 @@ export function HeroSection() {
                         <Zoom>
                             <Card className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border-yellow-400/30 backdrop-blur-sm max-w-md mx-auto">
                                 <div className="p-6 text-center">
-                                    <div className="text-4xl font-black text-yellow-400 mb-2"> {holders !== null ? `+${holders.toLocaleString()}` : "Loading..."}</div>
-                                    <div className="text-white font-semibold">Number Of Holders</div>
+                                    <div className="text-4xl font-black text-[#a1673a] mb-2"> {holders !== null ? `+${holders.toLocaleString()}` : "Loading..."}</div>
+                                    <div className="text-[#432818] font-semibold">Number Of Holders</div>
                                 </div>
                             </Card>
                         </Zoom>
@@ -125,7 +134,7 @@ export function HeroSection() {
                     <div className="h-[500px] sm:h-[600px] w-full relative">
                         <div className=" absolute inset-0 bg-gradient-to-r from-indigo-500 to-yellow-500 blur-3xl opacity-20" />
                         <Image
-                            src={"/jomo-1.png"}
+                            src={"/background/logo.png"}
                             fetchPriority="high"
                             alt="Jumo Image "
                             fill

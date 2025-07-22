@@ -4,21 +4,21 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 export default function AboutUs() {
     return (
-        <section className="py-20 bg-[#99582a]">
+        <section className="py-20 bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818]">
             <div className="container mx-auto px-4">
                 <div className="mx-auto">
 
                     {/* Header */}
                     <div className="text-center mb-10">
-                        <div className="inline-flex items-center space-x-2 bg-blue-600 text-white px-6 py-2 rounded-full mb-6">
-                            <span className="w-2 h-2 bg-cyan-400 rounded-full" />
-                            <span className="w-4 h-1 bg-cyan-400 rounded-full" />
-                            <span className="w-8 h-1 bg-cyan-400 rounded-full" />
-                            <span className="w-4 h-1 bg-cyan-400 rounded-full" />
-                            <span className="w-2 h-2 bg-cyan-400 rounded-full" />
+                        <div className="inline-flex items-center space-x-2 bg-white text-white px-6 py-2 rounded-full mb-6">
+                            <span className="w-2 h-2 bg-[#e0d6cd] rounded-full" />
+                            <span className="w-4 h-1 bg-[#e0d6cd] rounded-full" />
+                            <span className="w-8 h-1 bg-[#e0d6cd] rounded-full" />
+                            <span className="w-4 h-1 bg-[#e0d6cd] rounded-full" />
+                            <span className="w-2 h-2 bg-[#e0d6cd] rounded-full" />
                         </div>
                         <Zoom>
-                            <h2 className="text-4xl md:text-5xl font-black text-white">ABOUT THE NUM PROJECT</h2>
+                            <h2 className="text-4xl md:text-5xl font-black text-[#e0d6cd]">ABOUT THE NUM PROJECT</h2>
                         </Zoom>
                     </div>
 
@@ -32,7 +32,7 @@ export default function AboutUs() {
                                     href="https://www.num1.shop"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline text-blue-700 hover:text-blue-900"
+                                    className="text-yellow-200 hover:text-yellow-300"
                                 >
                                     www.num1.shop
                                 </Link>
@@ -54,7 +54,7 @@ export default function AboutUs() {
                                     href="https://www.num1.shop"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="underline text-blue-700 hover:text-blue-900"
+                                    className="text-yellow-200 hover:text-yellow-300"
                                 >
                                     www.num1.shop
                                 </Link>
@@ -88,7 +88,7 @@ export default function AboutUs() {
 
                         {/* Transparency */}
                         <div className="mb-12 max-w-xl mx-auto">
-                            <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center">Transparency</h3>
+                            <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 text-[#432818]">Transparency</h3>
                             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-md">
                                 <p className="text-white text-sm md:text-base leading-relaxed">
                                     Our project is real and verifiable – from the e-commerce store to the planned physical locations.
