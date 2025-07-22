@@ -71,32 +71,38 @@ export function HeroSection() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-12 mx-auto max-w-fit lg:mx-0">
-                            <Link
-                                href="https://jup.ag/swap/6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ-So11111111111111111111111111111111111111112" target="_blank" rel="noopener noreferrer"
-                            >
-                                <Button
-                                    size="lg"
-                                    className="rounded-md border-gray-300 bg-gradient-to-br from-[#432818] via-[#6e3c26] to-[#8a4e23] 
-             hover:from-[#5a2f1f] hover:via-[#7f412a] hover:to-[#b35a28] 
-             text-white font-bold text-lg px-8 py-4 shadow-md hover:shadow-lg transition-all duration-200"
-                                >
-                                    BUY $NUM
-                                </Button>
-                            </Link>
+  <Link
+    href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto"
+  >
+    <Button
+      size="lg"
+      className="w-full sm:w-auto rounded-md border-gray-300 bg-gradient-to-br from-[#432818] via-[#6e3c26] to-[#8a4e23] 
+      hover:from-[#5a2f1f] hover:via-[#7f412a] hover:to-[#b35a28] 
+      text-white font-bold text-lg px-8 py-4 shadow-md hover:shadow-lg transition-all duration-200"
+    >
+      BUY $NUM
+    </Button>
+  </Link>
 
-                            <Link
-                                href="https://dexscreener.com/solana/6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ" target="_blank" rel="noopener noreferrer"
-                            >
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="border-gray-300 rounded-md  text-[#432818] hover:bg-[#432818] hover:text-white font-bold text-lg px-8 py-4 bg-transparent shadow-md"
-                                >
-                                    VIEW CHART
-                                </Button>
-                            </Link>
+  <Link
+    href="https://dexscreener.com/solana/6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto"
+  >
+    <Button
+      size="lg"
+      variant="outline"
+      className="w-full sm:w-auto border-gray-300 rounded-md text-[#432818] hover:bg-[#432818] hover:text-white font-bold text-lg px-8 py-4 bg-transparent shadow-md"
+    >
+      VIEW CHART
+    </Button>
+  </Link>
+</div>
 
-                        </div>
 
                         <div className="flex max-w-fit  space-x-6 mb-12 mx-auto lg:mx-0">
                             <Link href="https://x.com/numtoken_?t=Byor5U1IeJsSZZRedaTAhw&s=09" target="_blank" rel="noopener noreferrer">

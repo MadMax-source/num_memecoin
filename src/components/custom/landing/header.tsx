@@ -31,7 +31,7 @@ export function Header() {
                             </SheetTrigger>
                             <SheetContent
                                 side="right"
-                                className="bg-[#8a4e23] border-l border-cyan-400/30"
+                                className="bg-[#e0d6cd] border-l "
                             >
                                 <div className="flex flex-col space-y-6 mt-8">
                                     <div className="flex justify-start h-20 w-40 relative mb-8">
@@ -43,31 +43,31 @@ export function Header() {
                                             className="rounded-full object-contain"
                                         />
                                     </div>
-                                    <Link href="#home" className="text-white hover:text-cyan-400 text-lg font-medium transition-colors">
+                                    <Link href="#home" className="text-[#432818] hover:text-[#a1673a] text-lg font-medium transition-colors">
                                         Home
                                     </Link>
-                                    <Link href="#about" className="text-white hover:text-cyan-400 text-lg font-medium transition-colors">
+                                    <Link href="#about" className="text-[#432818] hover:text-[#a1673a] text-lg font-medium transition-colors">
                                         About
                                     </Link>
                                     <Link
                                         href="#tokenomics"
-                                        className="text-white hover:text-cyan-400 text-lg font-medium transition-colors"
+                                        className="text-[#432818] hover:text-[#a1673a] text-lg font-medium transition-colors"
                                     >
                                         Tokenomics
                                     </Link>
-                                    <Link href="#roadmap" className="text-white hover:text-cyan-400 text-lg font-medium transition-colors">
+                                    <Link href="#roadmap" className="text-[#432818] hover:text-[#a1673a] text-lg font-medium transition-colors">
                                         Roadmap
                                     </Link>
                                     <Link
                                         href="#community"
-                                        className="text-white hover:text-cyan-400 text-lg font-medium transition-colors"
+                                        className="text-[#432818] hover:text-[#a1673a] text-lg font-medium transition-colors"
                                     >
                                         Community
                                     </Link>
                                     <div className="border-t border-gray-600 pt-6 mt-8">
                                         <div className="flex space-x-4">
                                             <Link href="https://t.me/num1coin" target="_blank" rel="noopener noreferrer">
-                                                <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                                                <Button variant="ghost" size="icon" className="text-[#432818] hover:text-[#a1673a]">
                                                     <Send className="h-5 w-5" />
                                                 </Button>
                                             </Link>
@@ -76,7 +76,7 @@ export function Header() {
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
-                                                <Button variant="ghost" size="icon" className="text-white hover:text-cyan-400">
+                                                <Button variant="ghost" size="icon" className="text-[#432818] hover:text-[#a1673a]">
                                                     <Twitter className="h-5 w-5" />
                                                 </Button>
                                             </Link>
