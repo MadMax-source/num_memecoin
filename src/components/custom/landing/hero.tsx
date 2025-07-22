@@ -52,7 +52,7 @@ export function HeroSection() {
                     <div className=" relative z-10 container mx-auto px-4 lg:px-0 xl:px-4 w-full ">
                         <div className="mb-8">
                             <h1 className="text-4xl text-center lg:text-left text-[#432818] lg:text-5xl font-black  mb-4 tracking-tight">
-                                Secure Transactions with Complete Trust | NUMO
+                                Secure Transactions with Complete Trust | $NUM
                             </h1>
                             <div className="w-32 h-1  bg-[#a1673a] mx-auto lg:mx-0  mb-8" />
                         </div>

@@ -7,12 +7,12 @@ export default function Network() {
           <svg className="w-full h-full" viewBox="0 0 800 600">
             <defs>
               <radialGradient id="nodeGradient" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.2" />
+                <stop offset="0%" stopColor="#a1673a" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#a1673a" stopOpacity="0.2" />
               </radialGradient>
             </defs>
             {/* Network nodes and connections */}
-            <g stroke="#06b6d4" strokeWidth="1" fill="none" opacity="0.6">
+            <g stroke="#a1673a" strokeWidth="1" fill="none" opacity="0.6">
               <line x1="100" y1="100" x2="200" y2="150" />
               <line x1="200" y1="150" x2="300" y2="100" />
               <line x1="300" y1="100" x2="400" y2="200" />
