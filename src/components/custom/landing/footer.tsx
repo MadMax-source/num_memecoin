@@ -5,14 +5,14 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer() {
-    const contractAddress = "HGR2HkBpZBKb5Cr6TXPR9KgU2FbxVsAA54zm7DmQLNGQ"
+    const contractAddress = "6BcKLX6yhkcfoc36KgeM2Mm1R4ARPCA1qvfB9TkYTfLQ"
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(contractAddress)
     }
 
     return (
-        <footer className="bg-gradient-to-br from-[#8a4e23] via-orange-900 to-[#8a4e23] py-16">
+        <footer className="bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818] py-16">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     {/* Brand Section */}
@@ -24,14 +24,14 @@ export default function Footer() {
                             Your number, your identity. Represent your number. Be unique.
                         </p>
                         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                            <p className="text-sm text-gray-400 mb-2">Contract Address:</p>
+                            <p className="text-sm text-gray-300 mb-2">Contract Address:</p>
                             <div className="flex items-center space-x-2">
-                                <code className="text-cyan-400 font-mono text-sm break-all">{contractAddress}</code>
+                                <code className="text-[white] font-mono text-sm break-all">{contractAddress}</code>
                                 <Button
                                     size="sm"
                                     variant="ghost"
                                     onClick={copyToClipboard}
-                                    className="text-cyan-400 hover:text-cyan-300"
+                                    className="text-gray-300 hover:text-cyan-300"
                                 >
                                     <Copy className="h-4 w-4" />
                                 </Button>
