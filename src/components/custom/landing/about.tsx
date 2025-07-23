@@ -1,11 +1,13 @@
+import AnimatedSolanaBackground from "@/components/background/animationSolBg";
 import Image from "next/image"
 import Link from "next/link"
 import { Fade, Zoom } from "react-awesome-reveal";
 
 export default function AboutUs() {
     return (
-        <section className="py-20 bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818]">
-            <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818]">
+            <AnimatedSolanaBackground />
+            <div className="relative z-10 container mx-auto px-4">
                 <div className="mx-auto">
 
                     {/* Header */}

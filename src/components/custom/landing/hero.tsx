@@ -47,7 +47,7 @@ export function HeroSection() {
            */}
            <WaveBackground />
             {/*bg-[#8a4e23] */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4">
                 <Fade>
                     <div className=" relative z-10 container mx-auto px-4 lg:px-0 xl:px-4 w-full ">
                         <div className="mb-8">

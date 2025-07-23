@@ -1,4 +1,5 @@
 
+import AnimatedSolanaBackground from "@/components/background/animationSolBg"
 import { Button } from "@/components/ui/button"
 import { Twitter, Send, Instagram, Copy, TrendingUp } from "lucide-react"
 import Image from "next/image"
@@ -12,8 +13,9 @@ export default function Footer() {
     }
 
     return (
-        <footer className="bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818] py-16">
-            <div className="container mx-auto px-4">
+        <footer className="relative bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818] py-16">
+            <AnimatedSolanaBackground />
+            <div className="relative container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     {/* Brand Section */}
                     <div className="col-span-1 md:col-span-2">
