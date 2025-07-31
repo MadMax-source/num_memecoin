@@ -58,7 +58,7 @@ export function HeroSection() {
                         </div>
 
                         <h2 className="text-lg text-center  lg:text-left md:text-base text-[#a1673a] bg-[#e0d6cd]	 mb-6 leading-tight">
-                            NUM is not just a token – it's a digital asset backed by a real-world ecosystem.
+                            NUM is not just a token—it's a digital asset powering a global sustainable activewear brand crafted in Riyadh. Backed by a real-world ecosystem, NUM supports high-quality sportswear made entirely from recycled materials for modern, eco-conscious consumers.
                         </h2>
                         <div className="bg-[#a1673a]/10 backdrop-blur-sm	 rounded-lg p-4 mb-8 max-w-fit mx-auto lg:mx-0">
                             <p className="text-sm text-[#a1673a] mb-2 text-center">Contract:</p>
@@ -140,7 +140,7 @@ export function HeroSection() {
                     <div className="h-[500px] sm:h-[600px] w-full relative">
                         <div className=" absolute  " />
                         <Image
-                            src={"/background/logo.png"}
+                            src={"/background/numlogo.png"}
                             fetchPriority="high"
                             alt="Jumo Image "
                             fill

@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { TrendingUp, Users, Zap } from "lucide-react"
+import { Package, Globe, BadgeDollarSign } from "lucide-react"
 
 export function Stats() {
     return (
@@ -8,23 +8,23 @@ export function Stats() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <Card className="bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818] text-white shadow-xl backdrop-blur-md border border-white/10">
                         <div className="p-6 text-center">
-                            <TrendingUp className="h-12 w-12 text-[#e0d6cd] mx-auto mb-4" />
+                            <Package className="h-12 w-12 text-[#e0d6cd] mx-auto mb-4" />
                             <h3 className="text-2xl font-bold text-white mb-2">Real-World Utility</h3>
-                            <p className="text-gray-300">Backed by a real-world ecosystem</p>
+                            <p className="text-gray-300">NUM is integrated into a functioning e-commerce ecosystem offering real products</p>
                         </div>
                     </Card>
                     <Card className="bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818] text-white shadow-xl backdrop-blur-md border border-white/10">
                         <div className="p-6 text-center">
-                            <Users className="h-12 w-12 text-[#e0d6cd] mx-auto mb-4" />
-                            <h3 className="text-2xl font-bold text-white mb-2">Global Expansion</h3>
-                            <p className="text-gray-300">Clubs launching in major cities Q1 2026</p>
+                            <Globe className="h-12 w-12 text-[#e0d6cd] mx-auto mb-4" />
+                            <h3 className="text-2xl font-bold text-white mb-2">Global Brand Development</h3>
+                            <p className="text-gray-300">Focused on global expansion through online sales and visibility</p>
                         </div>
                     </Card>
                     <Card className="bg-gradient-to-br from-[#a1673a] via-[#b77b4d] to-[#432818] text-white shadow-xl backdrop-blur-md border border-white/10">
                         <div className="p-6 text-center">
-                            <Zap className="h-12 w-12 text-[#e0d6cd] mx-auto mb-4" />
-                            <h3 className="text-2xl font-bold text-white mb-2">AI Integration</h3>
-                            <p className="text-gray-300">AI-powered shopping assistant in 2025</p>
+                            <BadgeDollarSign className="h-12 w-12 text-[#e0d6cd] mx-auto mb-4" />
+                            <h3 className="text-2xl font-bold text-white mb-2">Digital Currency Use</h3>
+                            <p className="text-gray-300">NUM token unlocks discounts, loyalty rewards, and access to exclusive pre-orders and limited drops.</p>
                         </div>
                     </Card>
                 </div>

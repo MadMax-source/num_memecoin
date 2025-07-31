@@ -28,8 +28,7 @@ export default function AboutUs() {
                     <Fade>
                         <div className="sm:p-6 mb-10">
                             <p className="text-white text-sm md:text-base text-center  leading-relaxed mb-6 max-w-2xl mx-auto">
-                                NUM is not just a token – it's a digital asset backed by a real-world ecosystem. It’s the official token
-                                powering the fashion-tech brand NUM1, which already operates an online activewear store at{" "}
+                                 NUM is a digital asset powering a global sustainable activewear brand—crafted in Riyadh from 100% recycled materials. Backed by a real-world ecosystem, it supports a growing fashion-tech platform committed to affordability, innovation, and environmental responsibility.{" "}
                                 <Link
                                     href="https://www.num1.shop"
                                     target="_blank"
@@ -41,8 +40,7 @@ export default function AboutUs() {
                                 .
                             </p>
                             <p className="text-white text-sm md:text-base  text-center leading-relaxed max-w-2xl mx-auto">
-                                <strong>Our Mission:</strong> To connect fashion, fitness, and blockchain in one seamless lifestyle
-                                experience. NUM is built to integrate with both the e-commerce store and our upcoming fitness club network.
+                                <strong>Our Mission:</strong> To become a global leader in sustainable fashion—blending modern design, advanced technology, and eco-conscious manufacturing through a multi-phase strategy.
                             </p>
                         </div>
                     </Fade>
@@ -50,42 +48,25 @@ export default function AboutUs() {
                     {/* Ecosystem Highlights */}
                     <div className="gap-10">
                         <Section title="Ecosystem Highlights" image="/system.svg" reverse={false}>
-                            <li>
-                                Activewear fashion brand with online presence at{" "}
-                                <Link
-                                    href="https://www.num1.shop"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-yellow-200 hover:text-yellow-300"
-                                >
-                                    www.num1.shop
-                                </Link>
-                            </li>
-                            <li>Future gamification modules for online users</li>
-                            <li>Real-world Pilates & fitness club launches in Riyadh, Dubai, London, New York, Paris, Geneva, Kuwait, and Hong Kong starting Q1 2026</li>
-                            <li>Integration with Apple Pay passkey for seamless club access</li>
-                            <li>AI-powered shopping assistant launching in 2025 to personalize experience</li>
-                            <li>Loyalty reward system tied directly to NUM holders</li>
-                            <li>Smart access cards for project-wide services and upcoming strategic partnerships</li>
-                            <li>Mobile application integrating all services</li>
+                             <li><strong>Phase 1 (2025 – End of 2026):</strong> Sell ready-made activewear via the online store while building global brand visibility. No in-house manufacturing in this phase.</li>
+    <li><strong>Phase 2 (Starting 2027):</strong> Launch NUM’s in-house factory in Riyadh to serve as a global production and logistics hub. Logistics company will be merged into NUM’s brand structure.</li>
+    <li><strong>Phase 3 (2027+):</strong> Expand logistics and manufacturing capabilities with international partnerships for global reach and faster distribution.</li>
+   
                         </Section>
 
                         {/* Utility */}
                         <Section title="Utility of the Token" image="/utility.svg" reverse>
-                            <li>Discounted or free club memberships</li>
-                            <li>Special product drops & early access</li>
-                            <li>AI-driven e-commerce perks</li>
-                            <li>Global club pass integration</li>
-                            <li>Passive earning through future revenue-based rewards</li>
+                        <li>Discounts, loyalty rewards, and engagement systems on the e-commerce store</li>
+                        <li>Access to exclusive pre-orders and limited edition drops</li>
+                        <li>Future integration with gamified loyalty and reward models</li>
                         </Section>
 
                         {/* Roadmap */}
-                        <Section title="Roadmap" image="/road-map.svg" reverse={false}> 
-                            <li><strong>Q3 2025:</strong> Launch landing page and Telegram growth</li>
-                            <li><strong>Q4 2025:</strong> Launch NUM token on major exchanges</li>
-                            <li><strong>Q1 2026:</strong> Launch clubs in Riyadh, Dubai, London, New York, Paris, Geneva, Kuwait, and Hong Kong</li>
-                            <li><strong>Q1 2026:</strong> Launch AI assistant & global pass system</li>
-                            <li><strong>Q2 2026:</strong> Begin further international club expansion & reward system rollout</li>
+                        <Section title="What Makes NUM Different" image="/road-map.svg" reverse={false}> 
+                        <li>All products made from 100% recycled materials</li>
+                        <li>Affordable pricing without compromising on quality</li>
+                        <li>Modern design with sustainability at the core</li>
+                        <li>Future integration of AI and smart manufacturing technology</li>
                         </Section>
 
                         {/* Transparency */}
@@ -93,8 +74,7 @@ export default function AboutUs() {
                             <h3 className="text-3xl md:text-4xl font-bold  mb-6 text-[#432818]">Transparency</h3>
                             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-md">
                                 <p className="text-white text-sm md:text-base leading-relaxed">
-                                    Our project is real and verifiable – from the e-commerce store to the planned physical locations.
-                                    Investors can track development milestones and participate actively in shaping the future of NUM.
+                                     Our project is grounded in real operations—from our online activewear store to our upcoming in-house manufacturing launch. All phases and developments are fully trackable, with community involvement at every step.
                                 </p>
                             </div>
                         </div>
