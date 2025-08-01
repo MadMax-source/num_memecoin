@@ -140,7 +140,7 @@ export function HeroSection() {
                     <div className="h-[500px] sm:h-[600px] w-full relative">
                         <div className=" absolute  " />
                         <Image
-                            src={"/background/numlogo.png"}
+                            src={"/background/numlogobg.png"}
                             fetchPriority="high"
                             alt="Jumo Image "
                             fill
